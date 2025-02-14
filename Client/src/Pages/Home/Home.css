@@ -1,0 +1,35 @@
+.home {
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.home .home-top {
+  display: grid;
+  grid-template-columns: 5fr 0.5fr;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.home .home-top .account {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .home-top .account img {
+  border: 1px solid rgb(0, 63, 84);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home .home-top input {
+  padding-left: 10px;
+  width: 100%;
+  border-radius: 20px;
+  outline-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  border: 1px solid rgb(0, 115, 210);
+}
