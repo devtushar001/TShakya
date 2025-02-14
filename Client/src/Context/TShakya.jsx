@@ -1,18 +1,20 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
-const TShakyaContext = createContext(null);
+export const TShakyaContext = createContext(null);
+// export const DochakiContext = createContext(null);
 
-const TShakyaContextProvider = ({ children }) => {
-  const [searchQuery, setSearchQuery] = useState('test');
+
+const TShakyaContextProvider = (props) => {
+  const [searchQuerry, setSearchQuerry] = useState('test');
 
   const contextValue = {
-    searchQuery,
-    setSearchQuery
+    searchQuerry,
+    setSearchQuerry
   };
 
   return (
     <TShakyaContext.Provider value={contextValue}>
-      {children}
+      {props.children}
     </TShakyaContext.Provider>
   );
 };
